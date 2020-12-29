@@ -1,0 +1,16 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    // Initialization of inputArray. Do not declare this array!
+
+    TODO()
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10957#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 3. Wrong answer
+  time: Tue, 29 Dec 2020 06:43:40 UTC
+record: -1
