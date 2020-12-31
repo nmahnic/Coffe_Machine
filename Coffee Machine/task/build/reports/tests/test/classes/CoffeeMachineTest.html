@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.334s</div>
+<div class="counter">0.217s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,160 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="start"></a>
-<h3 class="failures">start</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Wrong answer in test #1
-
-There should be two lines with &quot;milk&quot;, found: 8
-
-Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
-
----
-
-The coffee machine has:
-400 of water
-540 of milk
-120 of coffee beans
-9 of disposable cups
-550 of money
-
-Write action (buy, fill, take, remaining, exit):&gt; remaining
-
-The coffee machine has:
-400 of water
-540 of milk
-120 of coffee beans
-9 of disposable cups
-550 of money
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
-
-The coffee machine has:
-50 of water
-465 of milk
-100 of coffee beans
-8 of disposable cups
-557 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
-
-The coffee machine has:
--300 of water
-390 of milk
-80 of coffee beans
-7 of disposable cups
-564 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; fill
-Write how many ml of water do you want to add:&gt; 1000
-Write how many ml of milk do you want to add:&gt; 0
-Write how many grams of coffee beans do you want to add:&gt; 0
-Write how many disposable cups of coffee do you want to add:&gt; 0
-
-The coffee machine has:
-700 of water
-390 of milk
-80 of coffee beans
-7 of disposable cups
-564 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
-
-The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-571 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; take
-I gave you $571
-
-The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-0 of money
-Write action (buy, fill, take, remaining, exit):&gt; remaining
-
-The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-0 of money
-Write action (buy, fill, take, remaining, exit):&gt; exit
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:103)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -225,93 +78,221 @@ Write action (buy, fill, take, remaining, exit):&gt; exit
 </tr>
 </thead>
 <tr>
-<td class="failures">start</td>
-<td class="failures">0.334s</td>
-<td class="failures">failed</td>
+<td class="success">start</td>
+<td class="success">0.217s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
 Start test 1?[0m
-The coffee machine has:
-400 of water
-540 of milk
-120 of coffee beans
-9 of disposable cups
-550 of money
 
-Write action (buy, fill, take, remaining, exit):&gt; remaining
+Write action (buy, fill, take, remaining, exit): &gt; remaining
 
 The coffee machine has:
 400 of water
 540 of milk
 120 of coffee beans
 9 of disposable cups
-550 of money
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
+$550 of money
 
-The coffee machine has:
-50 of water
-465 of milk
-100 of coffee beans
-8 of disposable cups
-557 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
+Write action (buy, fill, take, remaining, exit): &gt; buy
 
-The coffee machine has:
--300 of water
-390 of milk
-80 of coffee beans
-7 of disposable cups
-564 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; fill
-Write how many ml of water do you want to add:&gt; 1000
-Write how many ml of milk do you want to add:&gt; 0
-Write how many grams of coffee beans do you want to add:&gt; 0
-Write how many disposable cups of coffee do you want to add:&gt; 0
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 2
+Sorry, not enough water!
+
+Write action (buy, fill, take, remaining, exit): &gt; fill
+Write how many ml of water do you want to add: &gt; 1000
+Write how many ml of milk do you want to add: &gt; 0
+Write how many grams of coffee beans do you want to add: &gt; 0
+Write how many disposable cups of coffee do you want to add: &gt; 0
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): &gt; take
+I gave you $564
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
 
 The coffee machine has:
 700 of water
 390 of milk
 80 of coffee beans
 7 of disposable cups
-564 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; buy
-What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:&gt; 2
+$0 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 2?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
 
 The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-571 of money
-Write action (buy, fill, take, remaining, exit):ERROR
-Write action (buy, fill, take, remaining, exit):&gt; take
-I gave you $571
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; fill
+Write how many ml of water do you want to add: &gt; 3000
+Write how many ml of milk do you want to add: &gt; 3000
+Write how many grams of coffee beans do you want to add: &gt; 3000
+Write how many disposable cups of coffee do you want to add: &gt; 3000
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
 
 The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-0 of money
-Write action (buy, fill, take, remaining, exit):&gt; remaining
+3400 of water
+3540 of milk
+3120 of coffee beans
+3009 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 3?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
 
 The coffee machine has:
-350 of water
-315 of milk
-60 of coffee beans
-6 of disposable cups
-0 of money
-Write action (buy, fill, take, remaining, exit):&gt; exit
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 1
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+150 of water
+540 of milk
+104 of coffee beans
+8 of disposable cups
+$554 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 4?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+50 of water
+465 of milk
+100 of coffee beans
+8 of disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 5?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; 3
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+200 of water
+440 of milk
+108 of coffee beans
+8 of disposable cups
+$556 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 6?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; take
+I gave you $550
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$0 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
+?[1;31m
+Start test 7?[0m
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: &gt; back
+
+Write action (buy, fill, take, remaining, exit): &gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit): &gt; exit
 </pre>
 </span>
 </div>
@@ -323,7 +304,7 @@ Write action (buy, fill, take, remaining, exit):&gt; exit
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at 29 dic. 2020 03:57:39</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at Dec 31, 2020, 6:11:49 AM</p>
 </div>
 </div>
 </body>
