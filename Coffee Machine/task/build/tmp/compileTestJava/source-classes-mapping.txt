@@ -1,2 +1,0 @@
-CoffeeMachineTest.java
- CoffeeMachineTest
