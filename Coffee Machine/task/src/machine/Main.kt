@@ -145,20 +145,3 @@ class CoffeeMachine(){
         return false
     }
 }
-
-
-
-/*
-var lista = listOf(((milk/milkNeeded)),(water/waterNeeded),(coffee/coffeeNeeded))
-var minOfList :Float? = lista.min()
-println("LISTA: ${lista}")
-minOfList?.let {
-    N = truncate(it).toInt()
-}
-println("N: ${N}")
-when(N){
-    in 0..cups-1 -> println("No, I can make only ${N} cup(s) of coffee")
-    cups -> println("Yes, I can make that amount of coffee")
-    else -> println("Yes, I can make that amount of coffee (and even ${N?.minus(cups)} more than that)")
-}
-*/
