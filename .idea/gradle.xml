@@ -13,6 +13,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Coffee Machine/task" />
+            <option value="$PROJECT_DIR$/Problems (1)/Deposit" />
+            <option value="$PROJECT_DIR$/Problems (2)/Car speed" />
             <option value="$PROJECT_DIR$/Problems/Shapeshifter" />
             <option value="$PROJECT_DIR$/util" />
           </set>
