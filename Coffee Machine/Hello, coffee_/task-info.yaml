@@ -54,4 +54,7 @@ files:
   learner_created: false
 feedback_link: https://hyperskill.org/projects/67/stages/360/implement#comment
 status: Solved
-record: 1
+feedback:
+  message: Congratulations!
+  time: Thu, 31 Dec 2020 07:31:35 UTC
+record: 5

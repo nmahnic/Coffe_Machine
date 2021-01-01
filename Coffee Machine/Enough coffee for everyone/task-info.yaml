@@ -7,14 +7,7 @@ files:
     package machine
 
     fun main() {
-        //println("Hello, world!")
-        println("Starting to make a coffee")
-        println("Grinding coffee beans")
-        println("Boiling water")
-        println("Mixing boiled water with crushed coffee beans")
-        println("Pouring coffee into the cup")
-        println("Pouring some milk into the cup")
-        println("Coffee is ready!")
+        println("Hello, world!")
     }
   learner_created: false
 - name: test/CoffeeMachineTest.java
@@ -190,5 +183,5 @@ feedback_link: https://hyperskill.org/projects/67/stages/362/implement#comment
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 29 Dec 2020 05:51:06 UTC
-record: 3
+  time: Thu, 31 Dec 2020 07:46:35 UTC
+record: 2
